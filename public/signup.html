@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Записаться - TechLab Digital Solutions</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="/images/techlab-favicon.png" type="image/png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+  <header>
+    <div class="nav-bar">
+      <div id="nav-logo">
+        <div id="logo">
+          <a href="index.html"><img src="/images/techlab-logo.jpg" alt="TechLab Digital Solutions"></a>
+        </div>
+      </div>
+      <div class="nav-rem">
+        <div id="nav-home"><a href="index.html">Главная</a></div>
+        <div id="nav-courses"><a href="courses.html">Курсы</a></div>
+        <div id="nav-about"><a href="about.html">О нас</a></div>
+        <div id="nav-blog"><a href="contactus.html">Контакты</a></div>
+        <div class="language-switcher">
+          <select id="language-select">
+            <option value="ru">РУС</option>
+            <option value="kz">ҚАЗ</option>
+          </select>
+        </div>
+        <div id="nav-login"><button><a href="signup.html">Записаться</a></button></div>
+      </div>
+    </div>
+  </header>
+
+  <div class="signup-section">
+    <div class="signup-text">
+      <h1>ЗАПИСАТЬСЯ НА КУРСЫ</h1>
+      <p>Начните путешествие вашего ребенка в мир технологий уже сегодня!</p>
+    </div>
+  </div>
+
+  <form id="signupForm">
+    <div class="container">
+      <h1>РЕГИСТРАЦИЯ В TECHLAB DIGITAL SOLUTIONS</h1>
+      <hr>
+
+      <label><b>Имя ребенка</b></label>
+      <input type="text" name="Child Name" required>
+
+			<label for="child-age"><b>Возраст ребенка</b></label>
+   				<select name="Child Age" required>
+					<option value="">Выберите возраст</option>
+					<option value="5">5 лет</option>
+					<option value="6">6 лет</option>
+					<option value="7">7 лет</option>
+					<option value="8">8 лет</option>
+					<option value="9">9 лет</option>
+					<option value="10">10 лет</option>
+					<option value="11">11 лет</option>
+					<option value="12">12 лет</option>
+					<option value="13">13 лет</option>
+					<option value="14">14 лет</option>
+					<option value="15">15 лет</option>
+					<option value="16">16 лет</option>
+					<option value="17">17 лет</option>
+				</select>
+
+      <label><b>Выберите курс</b></label>
+      <select name="Course" required>
+        <option value="">Выберите курс</option>
+        <option value="python">Python Программирование</option>
+        <option value="lego-wedo">LEGO WeDo 2.0</option>
+        <option value="mindstorms">LEGO MINDSTORMS</option>
+        <option value="arduino">Arduino</option>
+        <option value="computer-basics">Компьютерные курсы</option>
+        <option value="excel">Курсы Excel</option>
+        <option value="office">Microsoft Office</option>
+        <option value="video-editing">Видеомонтаж</option>
+      </select>
+
+      <label><b>Формат обучения</b></label>
+      <select name="Learning Format" required>
+        <option value="">Выберите формат</option>
+        <option value="offline">Офлайн</option>
+        <option value="online">Онлайн</option>
+      </select>
+
+      <label><b>Имя родителя/опекуна</b></label>
+      <input type="text" name="Parent Name" required>
+
+      <label><b>Email</b></label>
+      <input type="email" name="Email" required>
+
+      <label><b>Номер телефона</b></label>
+      <input type="tel" name="Phone" required>
+
+      <label><b>Дополнительные комментарии</b></label>
+      <textarea name="Comments" rows="4" placeholder="Опишите цели обучения или задайте вопрос"></textarea>
+
+      <label>
+        <input type="checkbox" name="Newsletter" checked> Получать новости и обновления
+      </label>
+
+      <p class="agree">Регистрируясь, вы соглашаетесь с <a href="term.html">Условиями</a> и <a href="privacy.html">Политикой конфиденциальности</a>.</p>
+
+      <button type="submit">Записаться на курс</button>
+    </div>
+  </form>
+
+  <div class="trial-lesson">
+    <h2>Бесплатное пробное занятие</h2>
+    <p>Запишитесь и узнайте больше о подходящем курсе для вашего ребенка!</p>
+  </div>
+
+<footer>
+	<div class="contact-section-privacy">
+		<div class="section-first">
+			<a href='index.html'>
+			<img src="/images/techlab-logo.jpg" alt="TechLab Digital Solutions"></a>
+			<p>Где технологии встречаются с будущим.</p>
+		</div>
+		<div class="section-second">
+			<h3>ПОЛЕЗНЫЕ ССЫЛКИ</h3>
+			<p><i class="fa-solid fa-angle-right"></i><a href='courses.html'> Курсы</a><br>
+			<i class="fa-solid fa-angle-right"></i><a href='privacy.html'> Политика конфиденциальности</a><br>
+			<i class="fa-solid fa-angle-right"></i><a href='refund.html'> Возврат и отмена</a><br>
+			<i class="fa-solid fa-angle-right"></i><a href='term.html'> Условия использования</a></p>
+		</div>
+		<div class="section-third">
+			<h3>СВЯЗАТЬСЯ С НАМИ</h3>
+			<p><i class="fa-solid fa-envelope"></i>techtechlabds2021@gmail.com<br>
+			<i class="fa-solid fa-phone"></i>+7 (777) 985-61-29<br>
+			<i class="fa-solid fa-location-dot"></i>г. Астана, ул. Алихана Бокейхана 17/1<br>
+			<i class="fa-solid fa-clock"></i>Пн-Пт: 10:00 - 19:00</p>
+		</div>
+		<div class="section-fourth">
+			<h3>МЫ В СОЦСЕТЯХ</h3>
+			<p><a href="#" target="_blank">Facebook<i class="fa-brands fa-square-facebook"></i></a><br>
+			<a href="#" target="_blank">Instagram<i class="fa-brands fa-instagram"></i></a><br>
+			<a href="#" target="_blank">YouTube<i class="fa-brands fa-youtube"></i></a><br>
+			<a href="#" target="_blank">WhatsApp<i class="fa-brands fa-telegram"></i></a></p>
+		</div>
+	</div>
+	<div class="copyright">
+		Copyright <i class="fa-regular fa-copyright"></i> 2025 TechLab Digital Solutions
+	</div>
+</footer>
+
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/11.9.1/firebase-app.js";
+    import { getDatabase, ref, push, set } from "https://www.gstatic.com/firebasejs/11.9.1/firebase-database.js";
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyBwWqA0zS_O5KJt_anWtEYeVoFoy7KEDd8",
+      authDomain: "techlab-d922a.firebaseapp.com",
+      databaseURL: "https://techlab-d922a-default-rtdb.firebaseio.com",
+      projectId: "techlab-d922a",
+      storageBucket: "techlab-d922a.appspot.com",
+      messagingSenderId: "1034396190076",
+      appId: "1:1034396190076:web:1424f58e4a0de2991990f9"
+    };
+
+    const app = initializeApp(firebaseConfig);
+    const database = getDatabase(app);
+
+    const form = document.getElementById("signupForm");
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();
+
+      const data = {
+        childName: form["Child Name"].value,
+        childAge: form["Child Age"].value,
+        course: form["Course"].value,
+        format: form["Learning Format"].value,
+        parentName: form["Parent Name"].value,
+        email: form["Email"].value,
+        phone: form["Phone"].value,
+        comments: form["Comments"].value,
+        newsletter: form["Newsletter"].checked,
+        timestamp: new Date().toISOString()
+      };
+
+      try {
+        const newRef = push(ref(database, "registrations"));
+        await set(newRef, data);
+        window.location.href = "thank-you.html";
+      } catch (error) {
+        alert("Ошибка отправки: " + error.message);
+      }
+    });
+  </script>
+
+  <script src="language-switcher.js"></script>
+</body>
+</html>
