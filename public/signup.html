@@ -2,9 +2,13 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>Записаться - TechLab Digital Solutions</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <title>Записаться на курсы - TechLab Digital Solutions | Регистрация</title>
+  <meta name="description" content="Запишитесь на курсы робототехники и программирования в TechLab Digital Solutions. Бесплатный пробный урок. Курсы для детей 5-17 лет. Быстрая запись через Telegram-бот.">
+  <meta name="keywords" content="записаться на курсы, регистрация TechLab, бесплатный урок, робототехника запись, программирование для детей">
+  <meta property="og:title" content="Записаться на курсы - TechLab Digital Solutions">
+  <meta property="og:description" content="Запишитесь на курсы робототехники и программирования для детей">
+  <link rel="stylesheet" href="style.min.css">
   <link rel="icon" href="/images/techlab-favicon.png" type="image/png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
@@ -14,7 +18,7 @@
     <div class="nav-bar">
       <div id="nav-logo">
         <div id="logo">
-          <a href="index.html"><img src="/images/techlab-logo.jpg" alt="TechLab Digital Solutions"></a>
+          <a href="index.html"><img src="/images/techlab-logo.jpg" alt="TechLab Digital Solutions" loading="lazy"></a>
         </div>
       </div>
       <div class="nav-rem">
@@ -28,7 +32,7 @@
             <option value="kz">ҚАЗ</option>
           </select>
         </div>
-        <div id="nav-login"><button><a href="signup.html">Записаться</a></button></div>
+        <div id="nav-login"><button><a href="https://t.me/TechLabDS_bot" target="_blank">Telegram Bot</a></button></div>
       </div>
     </div>
   </header>
@@ -38,6 +42,16 @@
       <h1>ЗАПИСАТЬСЯ НА КУРСЫ</h1>
       <p>Начните путешествие вашего ребенка в мир технологий уже сегодня!</p>
     </div>
+  </div>
+
+  <div class="telegram-cta">
+    <h2>Быстрая запись через Telegram-бот</h2>
+    <p>Рекомендуем использовать наш Telegram-бот для мгновенной записи на бесплатный пробный урок</p>
+    <button class="telegram-btn">
+      <a href="https://t.me/TechLabDS_bot" target="_blank">
+        <i class="fa-brands fa-telegram"></i> Записаться через Telegram
+      </a>
+    </button>
   </div>
 
   <form id="signupForm">
@@ -111,13 +125,31 @@
   <div class="trial-lesson">
     <h2>Бесплатное пробное занятие</h2>
     <p>Запишитесь и узнайте больше о подходящем курсе для вашего ребенка!</p>
+    <div class="trial-benefits">
+      <div class="benefit">
+        <i class="fa-solid fa-check-circle"></i>
+        <span>Знакомство с преподавателем</span>
+      </div>
+      <div class="benefit">
+        <i class="fa-solid fa-check-circle"></i>
+        <span>Оценка уровня ребенка</span>
+      </div>
+      <div class="benefit">
+        <i class="fa-solid fa-check-circle"></i>
+        <span>Практическое занятие</span>
+      </div>
+      <div class="benefit">
+        <i class="fa-solid fa-check-circle"></i>
+        <span>Рекомендации по курсу</span>
+      </div>
+    </div>
   </div>
 
 <footer>
 	<div class="contact-section-privacy">
 		<div class="section-first">
 			<a href='index.html'>
-			<img src="/images/techlab-logo.jpg" alt="TechLab Digital Solutions"></a>
+			<img src="/images/techlab-logo.jpg" alt="TechLab Digital Solutions" loading="lazy"></a>
 			<p>Где технологии встречаются с будущим.</p>
 		</div>
 		<div class="section-second">
@@ -139,7 +171,7 @@
 			<p><a href="#" target="_blank">Facebook<i class="fa-brands fa-square-facebook"></i></a><br>
 			<a href="#" target="_blank">Instagram<i class="fa-brands fa-instagram"></i></a><br>
 			<a href="#" target="_blank">YouTube<i class="fa-brands fa-youtube"></i></a><br>
-			<a href="#" target="_blank">WhatsApp<i class="fa-brands fa-telegram"></i></a></p>
+			<a href="https://t.me/TechLabDS_bot" target="_blank">Telegram Bot<i class="fa-brands fa-telegram"></i></a></p>
 		</div>
 	</div>
 	<div class="copyright">
@@ -191,6 +223,6 @@
     });
   </script>
 
-  <script src="language-switcher.js"></script>
+  <script src="language-switcher.min.js"></script>
 </body>
 </html>
