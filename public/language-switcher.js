@@ -9,9 +9,9 @@ const translations = {
         'nav-signup': 'Записаться',
         
         // Hero section
-        'hero-title': 'Присоединяйтесь к',
-        'hero-subtitle': 'будущему технологий',
-        'hero-course': 'Робототехника и Программирование для детей',
+        'hero-title': 'Присоединяйтесь',
+        'hero-subtitle': 'к будущему технологий',
+        'hero-course': 'Создаем будущих IT-специалистов, инженеров!',
         'hero-button': 'Изучить курсы >',
         
         // Stats section
@@ -53,9 +53,9 @@ const translations = {
         'nav-signup': 'Тіркелу',
         
         // Hero section
-        'hero-title': 'Технологиялардың болашағына',
-        'hero-subtitle': 'қосылыңыз',
-        'hero-course': 'Балаларға арналған робототехника және бағдарламалау',
+        'hero-title': 'Технологиялардың',
+        'hero-subtitle': 'болашағына қосылыңыз',
+        'hero-course': 'Болашақ IT мамандары мен инженерлерді дайындаймыз!',
         'hero-button': 'Курстарды зерттеу >',
         
         // Stats section
@@ -104,6 +104,39 @@ function switchLanguage(lang) {
     
     // Update HTML lang attribute
     document.documentElement.lang = lang;
+    
+    // Update page title based on language
+    updatePageTitle(lang);
+}
+
+function updatePageTitle(lang) {
+    const currentPath = window.location.pathname;
+    const titleTranslations = {
+        ru: {
+            '/index.html': 'TechLab Digital Solutions - IT-школа робототехники и программирования для детей в Астане',
+            '/courses.html': 'Курсы робототехники и программирования для детей - TechLab Digital Solutions',
+            '/about.html': 'О нас - TechLab Digital Solutions | Ведущая IT-школа Казахстана',
+            '/contactus.html': 'Контакты - TechLab Digital Solutions | Свяжитесь с нами',
+            '/signup.html': 'Записаться на курсы - TechLab Digital Solutions | Регистрация',
+            '/privacy.html': 'Политика конфиденциальности - TechLab Digital Solutions',
+            '/refund.html': 'Политика возврата и отмены - TechLab Digital Solutions',
+            '/term.html': 'Условия использования - TechLab Digital Solutions'
+        },
+        kz: {
+            '/index.html': 'TechLab Digital Solutions - Астанадағы балаларға арналған робототехника мен бағдарламалау IT-мектебі',
+            '/courses.html': 'Балаларға арналған робототехника мен бағдарламалау курстары - TechLab Digital Solutions',
+            '/about.html': 'Біз туралы - TechLab Digital Solutions | Қазақстанның жетекші IT-мектебі',
+            '/contactus.html': 'Байланыс - TechLab Digital Solutions | Бізбен хабарласыңыз',
+            '/signup.html': 'Курстарға тіркелу - TechLab Digital Solutions | Тіркеу',
+            '/privacy.html': 'Құпиялылық саясаты - TechLab Digital Solutions',
+            '/refund.html': 'Қайтару және бас тарту саясаты - TechLab Digital Solutions',
+            '/term.html': 'Пайдалану шарттары - TechLab Digital Solutions'
+        }
+    };
+    
+    if (titleTranslations[lang] && titleTranslations[lang][currentPath]) {
+        document.title = titleTranslations[lang][currentPath];
+    }
 }
 
 // Initialize language switcher
@@ -126,9 +159,3 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
-
-// Add translation attributes to elements (this would be added to HTML elements)
-function addTranslationAttributes() {
-    // This function would be called to add data-translate attributes to HTML elements
-    // For now, we'll handle translations through direct text replacement
-}
